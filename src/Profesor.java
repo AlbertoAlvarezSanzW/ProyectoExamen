@@ -8,11 +8,11 @@ public class Profesor extends Thread{
     public void run() {
         try {
             sleep(10000);
-            System.out.println("------------------El profesor avisa del comienzo del examen---------------");
+            System.out.println("\n------------------El profesor avisa del comienzo del examen---------------\n");
             // en este paso tenemos que notificar a los alumnos el comienzo del examen
             comienzaExamen.aviso();
             sleep(15000);
-            System.out.println("------------------El profesor avisa que el examen a finalizado---------------");
+            System.out.println("\n------------------El profesor avisa que el examen a finalizado---------------\n");
             comienzaExamen.aviso();
         } catch (InterruptedException e) {
             e.printStackTrace();
